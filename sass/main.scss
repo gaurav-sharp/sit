@@ -1,0 +1,19 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'component/footer';
+@import 'component/our-team';
+@import 'component/loader';
+
+@import 'pages/home';
+@import 'pages/icms';
+@import 'pages/logzy';
+@import 'pages/iyms';
+@import 'pages/career';
+@import 'pages/sharp';
+@import 'pages/aboutus';
