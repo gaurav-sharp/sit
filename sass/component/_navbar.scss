@@ -1,0 +1,187 @@
+.navbar {
+  font-family: 'Casanova Scotia Regular';
+  padding: 1.2rem 0rem;
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-white;
+  z-index: 100;
+
+  @include adapt(sm) {
+    padding: 1.2rem 2rem;
+    box-shadow: 0rem 0px 1rem $light-grey;
+  }
+
+  .navbar-brand {
+    flex: 1;
+    img {
+      width: 20rem;
+      height: auto;
+      @include adapt(md) {
+        width: 20rem;
+      }
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+    &:focus {
+      outline: none;
+    }
+    & .icon-bar {
+      width: 22px;
+      height: 2px;
+      background-color: $color-primary;
+      display: block;
+      transition: all 0.2s;
+      margin-top: 4px;
+    }
+    &.collapsed .top-bar {
+      transform: rotate(0);
+    }
+    &.collapsed .middle-bar {
+      opacity: 1;
+    }
+    &.collapsed .bottom-bar {
+      transform: rotate(0);
+    }
+    & .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+    & .middle-bar {
+      opacity: 0;
+    }
+    & .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+  }
+  .navbar-collapse {
+    @include adapt(md) {
+      position: absolute;
+      top: 9rem;
+      left: 0;
+      width: 100%;
+      background-color: $color-white;
+    }
+    & ul.navbar-nav {
+      & li.nav-item {
+        @include adapt(md) {
+          text-align: center;
+        }
+        & a.nav-link {
+          padding: 2rem !important;
+          transition: all 0.2s;
+
+          &:link,
+          &:visited {
+            color: $color-primary;
+          }
+          &:hover,
+          &:focus {
+            color: $color-primary;
+            @include adapt(md) {
+              background-color: rgba($color-primary, 0.1);
+            }
+          }
+        }
+        & .dropdown-menu {
+          display: block;
+          right: 0;
+          left: -4rem;
+          top:calc(100% + 1rem);
+          border: 0px solid transparent;
+          color: $color-white;
+          background-color: $color-primary;
+          opacity: 0;
+          transform: translateY(2rem);
+          transition: all 0.2s;
+          visibility: hidden;
+
+          @include adapt(md) {
+            background-color: $color-white;
+            color: $color-primary;
+          }
+
+          &.show {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0rem);
+            @include adapt(md) {
+              display: block;
+            }
+          }
+
+          @include adapt(md) {
+            display: none;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0rem);
+            padding: 0px;
+            border: 0px solid transparent;
+          }
+
+          & .dropdown-item {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem 2rem !important;
+            color: $color-white;
+            background-color: $color-primary;
+            transition: all 0.2s;
+
+            @include adapt(md) {
+              padding: 2rem !important;
+              background-color: rgba($color-primary, 0.03);
+              color: $color-primary;
+            }
+            &:active,
+            &:hover {
+              color: $color-primary;
+              background-color: $color-white;
+
+              @include adapt(md) {
+                background-color: rgba($color-primary, 0.1);
+              }
+            }
+          }
+        }
+      }
+    }
+    & ul.navbar-nav {
+      &.icon-group {
+        align-items: center;
+        @include adapt(md) {
+          display: none;
+        }
+        & li.nav-item {
+          & a.nav-link {
+            padding: 1rem !important;
+
+            &.facebook {
+              &:hover,
+              &:focus {
+                color: rgb(59, 89, 152);
+              }
+            }
+
+            &.linkedin {
+              &:hover,
+              &:focus {
+                color: rgb(0, 123, 182);
+              }
+            }
+
+            &.youtube {
+              &:hover,
+              &:focus {
+                color: rgb(187, 0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
