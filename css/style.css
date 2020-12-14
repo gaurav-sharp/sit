@@ -664,6 +664,9 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
     margin-left: -5rem;
     margin-right: -5rem; }
+    @media (max-width: 991.98px) {
+      .home__service--content-service {
+        height: 45rem; } }
     .home__service--content-service.slick-active.slick-center {
       transform: scale(1);
       z-index: 3; }
@@ -678,6 +681,10 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
       margin-bottom: 3rem;
       box-shadow: 1rem 1rem 1rem rgba(120, 200, 168, 0.3);
       overflow: hidden; }
+      @media (max-width: 991.98px) {
+        .home__service--content-service-image {
+          width: 18rem;
+          height: 18rem; } }
       .home__service--content-service-image img {
         width: 100%;
         height: auto; }
@@ -688,3 +695,30 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
       color: #78c8a8; }
     .home__service--content-service-name p {
       font-size: 2rem; }
+
+.home__whoweare {
+  padding: 10rem 0rem;
+  background-image: linear-gradient(rgba(38, 94, 121, 0.95), rgba(38, 94, 121, 0.95)), url(../images/whowearebackground.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .home__whoweare--text {
+    margin-bottom: 2rem;
+    width: 70%; }
+    .home__whoweare--text h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 1rem; }
+    .home__whoweare--text p {
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 1rem;
+      font-weight: 200; }
+    .home__whoweare--text-action {
+      margin-top: 10rem; }
+      .home__whoweare--text-action a img {
+        width: 10rem;
+        height: auto; }
+      .home__whoweare--text-action p {
+        margin-top: 2rem; }

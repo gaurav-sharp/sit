@@ -22,3 +22,11 @@ $('.home__service--content').slick({
         }
     ]
 });
+
+$('.home__whoweare--text-action a').magnificPopup({
+    items: {
+        src: 'https://vimeo.com/490687106?autoplay=1'
+    },
+    type: 'iframe'
+});
+

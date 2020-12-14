@@ -126,6 +126,10 @@
             margin-left: -5rem;
             margin-right: -5rem;
 
+            @include adapt(md) {
+                height: 45rem;
+            }
+
             &.slick-active.slick-center {
                 transform: scale(1);
                 z-index: 3;
@@ -144,6 +148,11 @@
                 margin-bottom: 3rem;
                 box-shadow: 1rem 1rem 1rem rgba($color-secondary,0.3);
                 overflow: hidden;
+
+                @include adapt(md) {
+                    width: 18rem;
+                    height: 18rem;
+                }
 
                 img {
                     width: 100%;
@@ -165,3 +174,48 @@
         }
     }
 }
+
+.home__whoweare {
+    padding: 10rem 0rem;
+    background-image: linear-gradient(rgba($color-primary,0.95), rgba($color-primary, 0.95)), url(../images/whowearebackground.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    &--text {
+        margin-bottom: 2rem;
+        width: 70%;
+
+        & h1 {
+            font-family: 'Casanova Scotia Regular';
+            font-size: 4rem;
+            color: $color-white;
+            margin-bottom: 1rem;
+        }
+
+        & p {
+            font-size: 2rem;
+            color: $color-white;
+            margin-bottom: 1rem;
+            font-weight: 200;
+        }
+        &-action {
+            margin-top:10rem;
+
+            a {
+                img {
+                    width: 10rem;
+                    height: auto;
+                }
+            }
+
+            p {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+
+}
+
+
