@@ -92,9 +92,11 @@
             font-family: $font-serif;
             font-size: 4rem;
             color: $color-secondary;
+            margin-bottom: 1rem;
         }
         p {
             font-size: 2rem;
+            font-weight: 200;
         }
     }
 
@@ -187,7 +189,7 @@
         width: 70%;
 
         & h1 {
-            font-family: 'Casanova Scotia Regular';
+            font-family: $font-serif;
             font-size: 4rem;
             color: $color-white;
             margin-bottom: 1rem;
@@ -214,8 +216,156 @@
             }
         }
     }
-
-
 }
+
+.home__whychooseus {
+    padding: 10rem 0rem;
+
+    &--title {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        & h1 {
+            font-family: 'Casanova Scotia Regular';
+            font-size: 4rem;
+            color: $color-primary;
+            margin-bottom: 1rem;
+        }
+
+        & p {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 200;
+        }
+    }
+
+    &--cards {
+        margin-top: 8rem;
+
+        &-card {
+            text-align: center;
+            padding: 0rem 3rem ;
+
+            &-icon {
+                margin-bottom: 2rem;
+
+                img {
+                    width: 10rem;
+                }
+            }
+
+            &-text {
+                h3 {
+                    font-size: 3rem;
+                    font-family: $font-serif;
+                    color: $color-primary;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 200;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+.home__ourClient {
+    padding: 10rem 0rem;
+    background-color: $grey-background;
+
+    &--title {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        & h1 {
+            font-family: 'Casanova Scotia Regular';
+            font-size: 4rem;
+            color: $color-primary;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &--cards {
+        margin-top: 8rem;
+
+        &-card {
+            &-photo {
+                text-align: center;
+                img {
+                    width: 10rem;
+                    height: auto;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                }
+            }
+
+            &-companyLogo {
+                img {
+                    width: 15rem;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+
+            &-testimony {
+                text-align: center;
+
+                p {
+                    font-size: 1.7rem;
+                    font-weight: 300;
+                }
+            }
+
+            &-personDetails {
+                text-align: center;
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+.home__career {
+    padding: 10rem 0rem;
+    background-image: linear-gradient(rgba($color-secondary,0.9), rgba($color-secondary, 0.9)), url(../images/careerbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    &--wrapper {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+
+        & h1 {
+            font-family: 'Casanova Scotia Regular';
+            font-size: 4rem;
+            color: $color-white;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 10px rgba($color-black,0.5);
+        }
+
+        & p {
+            font-size: 2rem;
+            margin-bottom: 4rem;
+            color: $color-white;
+            text-shadow: 1px 1px 10px $color-black;
+        }
+
+        & button {
+            font-size: 2rem;
+            background-color: $color-white;
+            color: $dark-grey;
+            padding: 1.5rem;
+            width: 30rem;
+            border-radius: 3rem;
+        }
+    }
+}
+
 
 

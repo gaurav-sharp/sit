@@ -643,9 +643,11 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
     .home__service--title h1 {
       font-family: "Casanova Scotia Regular";
       font-size: 4rem;
-      color: #78c8a8; }
+      color: #78c8a8;
+      margin-bottom: 1rem; }
     .home__service--title p {
-      font-size: 2rem; }
+      font-size: 2rem;
+      font-weight: 200; }
   .home__service--content .slick-track {
     padding: 5rem 0rem; }
   .home__service--content .slick-prev {
@@ -706,7 +708,7 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
     margin-bottom: 2rem;
     width: 70%; }
     .home__whoweare--text h1 {
-      font-family: 'Casanova Scotia Regular';
+      font-family: "Casanova Scotia Regular";
       font-size: 4rem;
       color: white;
       margin-bottom: 1rem; }
@@ -722,3 +724,101 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
         height: auto; }
       .home__whoweare--text-action p {
         margin-top: 2rem; }
+
+.home__whychooseus {
+  padding: 10rem 0rem; }
+  .home__whychooseus--title {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center; }
+    .home__whychooseus--title h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: #265e79;
+      margin-bottom: 1rem; }
+    .home__whychooseus--title p {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 200; }
+  .home__whychooseus--cards {
+    margin-top: 8rem; }
+    .home__whychooseus--cards-card {
+      text-align: center;
+      padding: 0rem 3rem; }
+      .home__whychooseus--cards-card-icon {
+        margin-bottom: 2rem; }
+        .home__whychooseus--cards-card-icon img {
+          width: 10rem; }
+      .home__whychooseus--cards-card-text h3 {
+        font-size: 3rem;
+        font-family: "Casanova Scotia Regular";
+        color: #265e79;
+        margin-bottom: 1.5rem; }
+      .home__whychooseus--cards-card-text p {
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-size: 2rem; }
+
+.home__ourClient {
+  padding: 10rem 0rem;
+  background-color: #f5f5f5; }
+  .home__ourClient--title {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center; }
+    .home__ourClient--title h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: #265e79;
+      margin-bottom: 1rem; }
+  .home__ourClient--cards {
+    margin-top: 8rem; }
+    .home__ourClient--cards-card-photo {
+      text-align: center; }
+      .home__ourClient--cards-card-photo img {
+        width: 10rem;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 50%; }
+    .home__ourClient--cards-card-companyLogo img {
+      width: 15rem;
+      height: auto;
+      margin: 0 auto; }
+    .home__ourClient--cards-card-testimony {
+      text-align: center; }
+      .home__ourClient--cards-card-testimony p {
+        font-size: 1.7rem;
+        font-weight: 300; }
+    .home__ourClient--cards-card-personDetails {
+      text-align: center; }
+      .home__ourClient--cards-card-personDetails p {
+        font-size: 1.6rem; }
+
+.home__career {
+  padding: 10rem 0rem;
+  background-image: linear-gradient(rgba(120, 200, 168, 0.9), rgba(120, 200, 168, 0.9)), url(../images/careerbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .home__career--wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+    .home__career--wrapper h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); }
+    .home__career--wrapper p {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      color: white;
+      text-shadow: 1px 1px 10px black; }
+    .home__career--wrapper button {
+      font-size: 2rem;
+      background-color: white;
+      color: #58585B;
+      padding: 1.5rem;
+      width: 30rem;
+      border-radius: 3rem; }
