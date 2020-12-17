@@ -367,5 +367,80 @@
     }
 }
 
+.home__contactus {
+    padding: 10rem 0rem;
+    background-color: $grey-background;
+
+    &--title {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 1px solid $light-grey;
+        margin-bottom: 5rem;
+
+        & h1 {
+            font-family: 'Casanova Scotia Regular';
+            font-size: 4rem;
+            color: $color-primary;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &--wrapper {
+        display: flex;
+        background-color: $color-white;
+        padding: 0rem;
+
+        &-form {
+            width: 60%;
+            padding: 4rem;
+            font-size: 1.5rem;
+
+            .form-group {
+                margin-bottom: 3rem;
+            }
+
+            input[type=text],textarea {
+                border-radius: 0px;
+                font-size: 1.5rem;
+                border: 0px;
+                border-bottom: 2px solid $light-grey;
+
+                &:focus {
+                    box-shadow: none;
+                    border-bottom: 2px solid $color-primary;
+                }
+            }
+
+            select {
+                font-size: 1.5rem;
+                border: 2px solid $light-grey;
+                padding: 1rem 2rem;
+                border-radius: 3rem;
+                height: auto;
+                background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 2rem center/8px 10px;
+            }
+
+            & button {
+                font-size: 2rem;
+                background-color: $color-primary;
+                color: $color-white;
+                padding: 1.5rem;
+                width: 30rem;
+                border-radius: 3rem;
+
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+
+        &-map {
+            width: 40%;
+        }
+    }
+}
+
 
 

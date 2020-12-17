@@ -11,7 +11,7 @@ a.scroll-to-top {
         align-items: center;
         justify-content: center;
         position: fixed;
-        background-color:$color-black;
+        background-color:$color-primary;
         color: $color-white;
         bottom: -100%;
         right: 10rem;
@@ -29,7 +29,7 @@ a.scroll-to-top {
     }
 }
 .footer {
-    background-color: $color-black;
+    background-color: $color-primary;
     padding: 2rem 0rem;
     display: flex;
 
@@ -62,5 +62,4 @@ a.scroll-to-top {
         text-align: right;
         font-size: 1.5rem;
     }
-    
 }
