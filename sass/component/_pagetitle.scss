@@ -1,0 +1,29 @@
+.page-title {
+  padding: 2rem;
+  background-color: $grey-background;
+  border-top: 1px solid rgba($light-grey,0.3);
+  border-bottom: 1px solid rgba($light-grey,0.3);
+
+  & .page-title__title {
+    & h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  & .page-title__breadcrumbs {
+    & .breadcrumb {
+      background-color: transparent;
+      font-size: 1.5rem;
+      padding: 0rem;
+      margin: 0rem;
+
+      & .breadcrumb-item {
+        & a {
+          color: $color-black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
