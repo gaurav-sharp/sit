@@ -712,8 +712,14 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
 
 .icms__heroBanner {
   padding: 10rem 0rem;
-  padding-bottom: 35rem;
-  position: relative; }
+  position: relative;
+  padding-bottom: 35rem; }
+  @media (max-width: 1199.98px) {
+    .icms__heroBanner {
+      padding-bottom: 25rem; } }
+  @media (max-width: 767.98px) {
+    .icms__heroBanner {
+      padding-bottom: 20rem; } }
   .icms__heroBanner canvas {
     display: block;
     vertical-align: bottom; }
@@ -759,7 +765,87 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
+    .icms__heroBanner--image img {
+      width: 80%;
+      height: auto; }
+      @media (max-width: 991.98px) {
+        .icms__heroBanner--image img {
+          width: 100%; } }
 
 .icms__features {
-  padding: 16rem 0rem 10rem 0rem;
+  padding: 22rem 0rem 10rem 0rem;
   background-color: #f5f5f5; }
+  .icms__features--title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+    .icms__features--title h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: #265e79;
+      margin-bottom: 1rem; }
+    .icms__features--title p {
+      font-size: 2rem;
+      margin-bottom: 4rem; }
+  .icms__features--features-feature {
+    text-align: center;
+    padding: 2rem 4rem;
+    max-width: 20%;
+    flex: 0 0 20%; }
+    @media (max-width: 991.98px) {
+      .icms__features--features-feature {
+        max-width: 25%;
+        flex: 0 0 25%; } }
+    @media (max-width: 767.98px) {
+      .icms__features--features-feature {
+        max-width: 33.33%;
+        flex: 0 0 33.33%; } }
+    .icms__features--features-feature img {
+      width: 80%;
+      height: auto; }
+    .icms__features--features-feature h1 {
+      color: #58585B; }
+
+.icms__whyicms {
+  padding: 10rem 0rem; }
+  .icms__whyicms--title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 8rem; }
+    .icms__whyicms--title h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: #265e79;
+      margin-bottom: 1rem; }
+    .icms__whyicms--title p {
+      font-size: 2rem; }
+  .icms__whyicms--cards-card {
+    padding-left: 4rem;
+    padding-right: 4rem; }
+    .icms__whyicms--cards-card img {
+      width: 8rem;
+      height: auto;
+      margin-bottom: 2rem; }
+    .icms__whyicms--cards-card h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 600; }
+    .icms__whyicms--cards-card p {
+      font-size: 2rem;
+      font-weight: 300; }
+
+.icms__stats {
+  padding: 5rem 0rem;
+  background-color: #78c8a8;
+  color: white; }
+  .icms__stats--stat {
+    text-align: center; }
+    .icms__stats--stat h1 {
+      font-size: 6rem;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 0rem; }
+    .icms__stats--stat p {
+      font-size: 2rem;
+      color: white; }

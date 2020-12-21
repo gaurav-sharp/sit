@@ -1,7 +1,15 @@
 .icms__heroBanner {
   padding: 10rem 0rem;
-  padding-bottom: 35rem;
   position: relative;
+  padding-bottom: 35rem;
+
+  @include adapt(lg) {
+    padding-bottom: 25rem;
+  }
+
+  @include adapt(sm) {
+    padding-bottom: 20rem;
+  }
 
   canvas {
     display: block;
@@ -60,10 +68,126 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
+    img {
+      width: 80%;
+      height: auto;
+      @include adapt(md) {
+        width: 100%;
+      }
+    }
   }
 }
 
 .icms__features {
-  padding: 16rem 0rem 10rem 0rem;
+  padding: 22rem 0rem 10rem 0rem;
   background-color: $grey-background;
+
+  &--wrapper {
+
+  }
+  &--title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    & h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &--features {
+    &-feature {
+      text-align: center;
+      padding: 2rem 4rem;
+      max-width: 20%;
+      flex: 0 0 20%;
+      @include adapt(md) {
+        max-width: 25%;
+        flex: 0 0 25%;
+      }
+      @include adapt(sm) {
+        max-width: 33.33%;
+        flex: 0 0 33.33%;
+      }
+      img {
+        width: 80%;
+        height: auto;
+      }
+      h1 {
+        color: $dark-grey;
+      }
+    }
+  }
+}
+
+.icms__whyicms {
+  padding: 10rem 0rem;
+
+  &--title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 8rem;
+
+    & h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 2rem;
+    }
+  }
+
+  &--cards {
+    &-card {
+      padding-left: 4rem;
+      padding-right: 4rem;
+
+      img {
+        width: 8rem;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+     p {
+        font-size: 2rem;
+        font-weight: 300;
+     }
+    }
+  }
+}
+.icms__stats {
+  padding: 5rem 0rem;
+  background-color: $color-secondary;
+  color: $color-white;
+
+  &--stat {
+    text-align: center;
+    h1 {
+      font-size: 6rem;
+      color: $color-white;
+      font-weight: 700;
+      margin-bottom: 0rem;
+    }
+    p {
+      font-size: 2rem;
+      color: $color-white;
+    }
+  }
 }
