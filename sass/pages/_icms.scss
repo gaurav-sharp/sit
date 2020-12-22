@@ -131,6 +131,7 @@
 
 .icms__whyicms {
   padding: 10rem 0rem;
+  background-color: $grey-background;
 
   &--title {
     width: 80%;
@@ -188,6 +189,233 @@
     p {
       font-size: 2rem;
       color: $color-white;
+    }
+  }
+}
+.icms__mobile {
+  padding: 8rem 0rem;
+
+  & .container {
+    display: flex;
+    align-items: center;
+
+    @include adapt(md) {
+      flex-direction: column;
+    }
+  }
+  &--image {
+    width: 40%;
+    text-align: center;
+
+    @include adapt(md) {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+
+    & img {
+      width: 70%;
+      height: auto;
+
+      @include adapt(md) {
+        width: 50%;
+      }
+    }
+  }
+
+  &--details{
+    width: 60%;
+    padding-right: 8rem;
+
+    @include adapt(md) {
+      padding-right: 0rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-detail{
+
+      &-title{
+        margin-bottom: 2rem;
+        & h2 {
+          font-family: 'Casanova Scotia Regular';
+          font-size: 4rem;
+          color: $color-primary;
+          margin-bottom: 1rem;
+        }
+      }
+      &-points{
+        margin-bottom: 4rem;
+
+        & dl {
+          display: flex;
+          align-items: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+
+          & dt {
+            margin-right: 2rem;
+            margin-bottom: 0rem;
+
+            &  i {
+              font-size: 2rem;
+              line-height: 1.5;
+              color: $color-primary;
+            }
+          }
+
+          & dd {
+            margin-bottom: 0rem;
+          }
+        }
+      }
+      &-action {
+        & a.btn {
+          font-size: 2rem;
+          background-color: $color-primary;
+          color: $color-white;
+          padding: 1rem;
+          width: 20rem;
+          border-radius: 3rem;
+          font-weight: 300;
+
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.icms__whocanbenefit {
+  padding: 10rem 0rem;
+
+  &--title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    & h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 2rem;
+    }
+  }
+
+  &--products {
+
+    .slick-track {
+      padding: 6rem 0rem;
+    }
+
+    &-product{
+      position: relative;
+      width: 100%;
+      height: 20rem;
+      cursor: pointer;
+      margin-right: 2rem;
+      margin-left: 2rem;
+
+      &:hover {
+        & .icms__whocanbenefit--products-product-out {
+          transform: translateY(-5rem);
+          z-index: 10;
+
+          & .text-wrapper {
+            background-color: rgba(0,0,0,0.5);
+
+            & h1 {
+              opacity: 1;
+              letter-spacing: 0rem;
+            }
+          }
+        }
+
+        & .icms__whocanbenefit--products-product-in {
+          transform: translateY(5rem);
+          z-index: 9;
+        }
+      }
+
+      & .icms__whocanbenefit--products-product-out {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        backdrop-filter: 10px;
+        transition: all  0.2s;
+        overflow: hidden;
+
+        & .text-wrapper {
+          background-color: rgba(0,0,0,0);
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.2s;
+          text-align: center;
+
+          & h1 {
+            padding: 2rem;
+            font-size: 2rem;
+            margin-bottom: 0rem;
+            font-weight: 700;
+            color: $color-white;
+            transition: all 0.2s;
+            opacity: 1;
+            letter-spacing: 0.5rem;
+            opacity: 0;
+          }
+        }
+      }
+
+      & .icms__whocanbenefit--products-product-in {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10rem;
+        background-color: $grey-background;
+        transition: all 0.2s;
+        padding: 2rem;
+        overflow: hidden;
+        box-shadow: inset 0rem 0px 1rem rgba($light-grey,0.5);
+
+        p {
+          font-size: 1.5rem;
+          color: $color-black;
+
+        }
+      }
+    }
+  }
+
+  &--action {
+    text-align: right;
+    & button {
+      font-size: 2rem;
+      background-color: $color-secondary;
+      padding: 0.5rem 1rem;
+      color: $color-white;
+      margin-right: 0.5rem;
+
+      &:hover {
+        background-color: darken($color-secondary,10%);
+        color: $color-white;
+      }
+
+      i {
+        line-height: 1.5;
+      }
     }
   }
 }
