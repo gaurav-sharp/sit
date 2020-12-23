@@ -1,37 +1,47 @@
-.pageAbout-aboutUs {
-    padding: 8rem 0rem;
+.about__whoweare {
+    padding: 10rem 0rem;
 
-    &__wrapper {
-        margin-top: 4rem;
+    &--text {
+        padding-left: 3rem;
+        padding-right: 3rem;
 
-        &--text {
-            p {
-                font-size: 1.5rem;
+        & h1 {
+            font-family: 'Casanova Scotia Regular';
+            font-size: 4rem;
+            color: $color-primary;
+            margin-bottom: 3rem;
+        }
+
+        & p {
+            font-size: 2rem;
+            margin-bottom: 0rem;
+
+            &:not(:last-child) {
                 margin-bottom: 2rem;
-                text-align: justify;
             }
         }
-        &--image {
-           object-fit: cover;
+    }
 
-            img {
-                width: 100%;
-                height: auto;
-                
-            }
+    &--image {
+        overflow: hidden;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        img {
+            object-fit: cover;
+            height: 100%;
         }
-    }    
+    }
 }
-
 .pageAbout-vision {
     padding: 0rem;
-    
+
     &__vision {
         padding: 4rem;
         background-color: $grey-background;
-        position: relative;
         overflow: hidden;
         transition: all 0.2s;
+        text-align: center;
 
         @include adapt(md) {
             &:not(:last-child) {
@@ -39,102 +49,24 @@
             }
         }
 
-        &:hover {
-            transform: translateY(-10%);
-        }
 
         &--title {
-            font-size: 3rem;
-            font-family: "Noto Serif", serif;
-            margin-bottom: 1rem;
+            font-family: 'Casanova Scotia Regular';
+            font-size: 4rem;
+            color: $color-secondary;
         }
-    
+
         &--content {
-            font-size: 1.5rem;
+            font-size: 2rem;
+            margin-bottom: 0rem;
         }
+
+
 
         &--icon {
-            position: absolute;
-            font-size: 12rem;
-            opacity: 0.05;
-            top: 30%;
-            left: 90%;
-            transform: translate(-50%,-50%);
-        }
-    }
-}
-
-.pageAbout-team {
-    padding: 8rem 0rem;
-    &__teams {
-        margin-top: 4rem;
-        
-        &--team {
-            display: flex;
-            margin-bottom: 6rem;
-
-            &-thumbnail {
-                width: 50%;
-                padding-right: 2rem;
-                
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-
-            &-details {
-                width: 50%;
-
-                h3 {
-                    font-family: "Noto Serif", serif;
-                    font-size: 2.5rem;
-                    margin-bottom: 0.5rem;
-                }
-
-                h5 {
-                    font-size: 1.7rem;
-                    margin-bottom: 2rem;
-                    font-weight: bold;
-                    color: $light-grey;
-                }
-
-                p {
-                    font-size: 1.4rem;
-                    text-align: justify;
-                    margin-bottom: 2rem;
-                }
-
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    @include clearfix;
-
-                    li {
-                        float: left;
-                        &:not(:last-child) {
-                            margin-right: 1rem;
-                        }
-
-                        a {
-                            display: inline-block;
-                            width: 4rem;
-                            height: 4rem;
-                            background-color: $grey-background;
-                            border: 1px solid rgba($light-grey,0.3);
-                            display: inline-flex;
-                            justify-content: center;
-                            align-items: center;
-                            font-size: 1.4rem;
-                            text-decoration: none;
-                            border-radius: 50%;
-                            color: $dark-grey;
-                        }
-                    }
-
-                }
-            }
+            width: 15rem;
+            height: auto;
+            margin-bottom: 1rem;
         }
     }
 }
