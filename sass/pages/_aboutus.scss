@@ -1,15 +1,29 @@
 .about__whoweare {
     padding: 10rem 0rem;
 
+    @include adapt(sm) {
+        padding-top: 5rem;
+    }
+
     &--text {
         padding-left: 3rem;
         padding-right: 3rem;
+
+        @include adapt(sm) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            margin-bottom: 5rem;
+        }
 
         & h1 {
             font-family: 'Casanova Scotia Regular';
             font-size: 4rem;
             color: $color-primary;
             margin-bottom: 3rem;
+
+            @include adapt(sm) {
+                text-align: center;
+            }
         }
 
         & p {
@@ -42,18 +56,15 @@
         overflow: hidden;
         transition: all 0.2s;
         text-align: center;
+        margin-bottom: 2rem;
 
-        @include adapt(md) {
+
+        @include adapt(sm) {
             &:not(:last-child) {
 
             }
         }
 
-        &--title {
-            font-family: 'Casanova Scotia Regular';
-            font-size: 4rem;
-            color: $color-secondary;
-        }
 
         &--content {
             font-size: 2rem;
@@ -70,6 +81,11 @@
 
 .about__team {
     padding: 10rem 0rem;
+
+    @include adapt(md) {
+        padding: 8rem 0rem;
+    }
+
     &--title {
         width: 80%;
         margin: 0 auto;
@@ -89,6 +105,10 @@
             text-align: center;
             padding-left: 2rem;
             padding-right: 2rem;
+
+            @include adapt(md) {
+                margin-bottom: 4rem;
+            }
 
             &-photo {
                 margin-bottom: 2rem;

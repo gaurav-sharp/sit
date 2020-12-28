@@ -51,7 +51,7 @@
       margin-bottom: 1rem;
     }
 
-    & button {
+    & a {
       margin-top: 4rem;
       font-size: 2rem;
       background-color: $color-white;
@@ -75,6 +75,12 @@
       @include adapt(md) {
         width: 100%;
       }
+
+      @include adapt(xs) {
+        transform: scale(1.1);
+        transform-origin: top;
+      }
+
     }
   }
 }
@@ -82,6 +88,10 @@
 .icms__features {
   padding: 22rem 0rem 10rem 0rem;
   background-color: $grey-background;
+
+  @include adapt(xs) {
+    padding-top: 15rem;
+  }
 
   &--wrapper {
 
@@ -118,9 +128,18 @@
         max-width: 33.33%;
         flex: 0 0 33.33%;
       }
+
+      @include adapt(xs) {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+
       img {
         width: 80%;
         height: auto;
+        @include adapt(xs) {
+          width: 50%;
+        }
       }
       h1 {
         color: $dark-grey;
@@ -156,6 +175,11 @@
       padding-left: 4rem;
       padding-right: 4rem;
 
+      @include adapt(md) {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
       img {
         width: 8rem;
         height: auto;
@@ -180,6 +204,13 @@
 
   &--stat {
     text-align: center;
+
+    @include adapt(md) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
     h1 {
       font-size: 6rem;
       color: $color-white;
@@ -229,13 +260,16 @@
     @include adapt(md) {
       padding-right: 0rem;
       width: 100%;
-      text-align: center;
     }
 
     &-detail{
 
       &-title{
         margin-bottom: 2rem;
+        @include adapt(md) {
+          text-align: center;
+        }
+
         & h2 {
           font-family: 'Casanova Scotia Regular';
           font-size: 4rem;

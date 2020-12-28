@@ -24,6 +24,9 @@
         font-size: 2rem;
       }
 
+      @include  adapt(sm) {
+        font-size: 3rem;
+      }
 
     }
 
@@ -56,23 +59,40 @@
         width: 180%;
         height: auto;
         transform: translateX(-50%);
+
+        @include adapt(md) {
+          width: 120%;
+        }
       }
     }
 
     &-desc {
+
+      @include adapt(md) {
+        text-align: center;
+        padding-top: 5rem;
+      }
+
       & h1 {
         font-family: 'Casanova Scotia Regular';
         font-size: 4rem;
         color: $color-primary;
         margin-bottom: 3rem;
+
+
       }
 
       & p {
         font-size: 1.8rem;
         margin-bottom: 2rem;
+
+        @include adapt(md) {
+          text-align: left;
+        }
+
       }
 
-      & button {
+      & a {
         margin-top: 1rem;
         font-size: 2rem;
         background-color: $color-primary;
@@ -115,6 +135,11 @@
     &-card {
       padding-left: 4rem;
       padding-right: 4rem;
+
+      @include adapt(md) {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
 
       img {
         width: 8rem;
