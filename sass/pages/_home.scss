@@ -59,10 +59,19 @@
     }
 
     &--text {
-        @include center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
         text-align: center;
         padding: 4rem;
-        color: $color-white;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(to top, rgba($color-primary, 0.5), transparent);
 
         & p {
             font-size: 2.5rem;
@@ -354,7 +363,7 @@
             font-size: 4rem;
             color: $color-white;
             margin-bottom: 1rem;
-            text-shadow: 1px 1px 10px rgba($color-black,0.5);
+            text-shadow: 1px 1px 10px rgba($color-black,0.3);
             @include adapt(sm) {
                 margin-bottom: 2rem;
             }
@@ -364,7 +373,7 @@
             font-size: 2rem;
             margin-bottom: 4rem;
             color: $color-white;
-            text-shadow: 1px 1px 10px $color-black;
+            text-shadow: 1px 1px 10px rgba($color-black,0.5);
         }
 
         & button {

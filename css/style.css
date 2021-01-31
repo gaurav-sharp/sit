@@ -566,12 +566,18 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
       background-size: cover; }
   .home__hero--text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
     text-align: center;
     padding: 4rem;
-    color: white; }
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(38, 94, 121, 0.5), transparent); }
     .home__hero--text p {
       font-size: 2.5rem;
       color: white;
@@ -763,7 +769,7 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
       font-size: 4rem;
       color: white;
       margin-bottom: 1rem;
-      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); }
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
       @media (max-width: 767.98px) {
         .home__career--wrapper h1 {
           margin-bottom: 2rem; } }
@@ -771,7 +777,7 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
       font-size: 2rem;
       margin-bottom: 4rem;
       color: white;
-      text-shadow: 1px 1px 10px black; }
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); }
     .home__career--wrapper button {
       font-size: 2rem;
       background-color: white;
@@ -1288,3 +1294,180 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
           color: white; }
           .about__team--team-member-social li a:hover {
             text-decoration: none; }
+
+.career__pageTitle {
+  padding: 10rem 15px; }
+  .career__pageTitle h1 {
+    font-family: 'Casanova Scotia Regular';
+    font-size: 4rem;
+    color: #265e79;
+    margin-bottom: 1rem; }
+  .career__pageTitle p {
+    font-size: 2rem;
+    font-weight: 200; }
+
+.career__culture {
+  padding: 10rem 0rem;
+  background-image: linear-gradient(rgba(38, 94, 121, 0.9), rgba(38, 94, 121, 0.9)), url(../images/career/cultureBackground.png);
+  background-size: cover;
+  background-position: center; }
+  .career__culture--row {
+    display: flex;
+    align-items: center; }
+    .career__culture--row-content {
+      width: 50%;
+      color: white; }
+      .career__culture--row-content h3 {
+        font-size: 3rem;
+        margin-bottom: 2rem; }
+      .career__culture--row-content p {
+        color: white;
+        font-size: 2rem;
+        font-weight: 200; }
+    .career__culture--row-image {
+      flex: 1; }
+    .career__culture--row .culture01 {
+      text-align: right;
+      transform: translateY(-50%); }
+    .career__culture--row .culture03 {
+      text-align: right;
+      transform: translateY(50%); }
+
+.career__opening {
+  padding: 10rem 15px; }
+  .career__opening--title {
+    margin-bottom: 5rem; }
+    .career__opening--title h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: #78c8a8;
+      margin-bottom: 1rem; }
+    .career__opening--title p {
+      font-size: 2rem;
+      font-weight: 200; }
+  .career__opening--position {
+    padding: 2rem;
+    border: 1px solid #e8e9e9;
+    border-radius: 1rem; }
+    .career__opening--position-title {
+      margin-bottom: 1.5rem; }
+      .career__opening--position-title h5 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #78c8a8; }
+    .career__opening--position-description {
+      margin-bottom: 1.5rem; }
+      .career__opening--position-description p {
+        font-size: 1.6rem;
+        font-weight: 200; }
+    .career__opening--position-details i {
+      font-size: 1.4rem;
+      color: #78c8a8;
+      margin-right: 1rem; }
+    .career__opening--position-details span {
+      font-size: 1.4rem; }
+
+.career__contact {
+  padding: 10rem 0rem;
+  background-color: #f5f5f5; }
+  .career__contact--title {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #A7A9AB;
+    margin-bottom: 5rem; }
+    .career__contact--title h1 {
+      font-family: 'Casanova Scotia Regular';
+      font-size: 4rem;
+      color: #265e79;
+      margin-bottom: 2rem; }
+  .career__contact--wrapper {
+    display: flex;
+    background-color: white;
+    padding: 4rem; }
+    @media (max-width: 767.98px) {
+      .career__contact--wrapper {
+        flex-direction: column; } }
+    .career__contact--wrapper-form {
+      width: 60%;
+      padding-right: 4rem;
+      font-size: 1.5rem;
+      border-right: 1px solid #dbdcdd; }
+      @media (max-width: 767.98px) {
+        .career__contact--wrapper-form {
+          width: 100%; } }
+      .career__contact--wrapper-form .form-group {
+        margin-bottom: 3rem; }
+      .career__contact--wrapper-form input[type=text], .career__contact--wrapper-form textarea {
+        border-radius: 0px;
+        font-size: 1.5rem;
+        border: 0px;
+        border-bottom: 2px solid #A7A9AB; }
+        .career__contact--wrapper-form input[type=text]:focus, .career__contact--wrapper-form textarea:focus {
+          box-shadow: none;
+          border-bottom: 2px solid #265e79; }
+      .career__contact--wrapper-form select {
+        font-size: 1.5rem;
+        border: 2px solid #A7A9AB;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        height: auto;
+        background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 2rem center/8px 10px; }
+      .career__contact--wrapper-form button {
+        margin-top: 2rem;
+        font-size: 2rem;
+        background-color: #265e79;
+        color: white;
+        padding: 1.5rem;
+        width: 30rem;
+        border-radius: 3rem; }
+        .career__contact--wrapper-form button:hover {
+          color: white; }
+      .career__contact--wrapper-form .custom-file .custom-file-label {
+        font-size: 1.5rem;
+        border: 2px solid #A7A9AB;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        height: auto; }
+        .career__contact--wrapper-form .custom-file .custom-file-label::after {
+          background: transparent;
+          margin: 1rem 0rem;
+          padding: 0rem 2rem;
+          height: auto; }
+    .career__contact--wrapper-mail {
+      flex: 1;
+      padding-left: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .career__contact--wrapper-mail h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #265e79; }
+      .career__contact--wrapper-mail p {
+        font-size: 1.8rem; }
+      .career__contact--wrapper-mail a {
+        font-weight: bold;
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        transition: all 0.2s;
+        display: inline-block;
+        padding: 0rem 1rem; }
+        .career__contact--wrapper-mail a:hover {
+          color: white; }
+          .career__contact--wrapper-mail a:hover::before {
+            height: 120%; }
+        .career__contact--wrapper-mail a::before {
+          content: "";
+          position: absolute;
+          height: 1.5px;
+          width: 100%;
+          background-color: #265e79;
+          bottom: -0.4rem;
+          left: 0;
+          margin-top: 0.5rem;
+          transition: all 0.2s;
+          z-index: -1; }
