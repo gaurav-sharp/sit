@@ -778,7 +778,7 @@ a.scroll-to-top:link, a.scroll-to-top:hover, a.scroll-to-top:visited {
       margin-bottom: 4rem;
       color: white;
       text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); }
-    .home__career--wrapper button {
+    .home__career--wrapper a {
       font-size: 2rem;
       background-color: white;
       color: #58585B;
